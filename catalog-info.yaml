@@ -1,0 +1,18 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: react_parson
+name: React Parson
+owner: user:account/todd.parson@harness.io
+orgIdentifier: sandbox
+projectIdentifier: parson
+spec:
+  lifecycle: experimental
+  sourceCode:
+    provider: Github
+    repoName: monorepo-idp-example
+    connectorRef: parsonghharnessidpsandbox
+    branch: main
+    monoRepo: true
+    monoRepoSubDirectoryPath: toddtest
+    url: https://github.com/harness-idp-sandbox/monorepo-idp-example/tree/main/toddtest
