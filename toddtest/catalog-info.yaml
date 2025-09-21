@@ -1,0 +1,41 @@
+apiVersion: backstage.io/v1alpha1
+  kind: Component
+  metadata:
+    name: toddtest
+    description: Testing for POC
+    tags:
+      - react
+      - monorepo
+      - idp
+      - dev
+      - us-east-1
+    links:
+      # Base repository (from Create_Branch output)
+      - url: https://github.com/harness-idp-sandbox/monorepo-idp-example.git
+        title: Source repository
+        icon: github
+      # Feature branch (from Create_Branch output)
+      - url: https://github.com/harness-idp-sandbox/monorepo-idp-example/tree/feature/toddtest-59
+        title: Feature branch
+        icon: link
+      # This pipeline run
+      - url: https://app.harness.io/ng/#/account/EeRjnXTnS4GrLG5VNNJZUw/cd/orgs/sandbox/projects/parson/pipelines/E2E_React_App_Provisioning/executions/Ndwt7hPdSpK1eYkG3HpmWw/pipeline
+        title: Pipeline execution
+        icon: build
+    annotations:
+      # TechDocs looks for mkdocs.yml at the component root. Change to 'dir:./docs' if your template puts docs in a /docs folder.
+      backstage.io/techdocs-ref: dir:.
+      # Required by a bunch of plugins; points to the monorepo (not the subfolder)
+      github.com/project-slug: null
+      # Optional: enable K8s plugin discovery later if you deploy with this label
+      # backstage.io/kubernetes-label-selector: 'app=toddtest'
+      # Optional: record where the component lives inside the monorepo (handy for humans & some tooling)
+      idp.harness.io/monorepo-path: toddtest
+  spec:
+    type: service
+    owner: todd.parson@harness.io
+    lifecycle: experimental
+    # Uncomment if you want to organize by system/domain later
+    # system: idp-demo
+    # dependsOn:
+    #   - resource:default/shared-k8s-cluster
