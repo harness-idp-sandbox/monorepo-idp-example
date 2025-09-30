@@ -15,10 +15,10 @@ metadata:
     - url: https://github.com/harness-idp-sandbox/monorepo-idp-example.git
       title: Source repository
       icon: github
-    - url: https://github.com/harness-idp-sandbox/monorepo-idp-example/tree/feature/todd-test-one-65
+    - url: https://github.com/harness-idp-sandbox/monorepo-idp-example/tree/feature/todd-test-one-69
       title: Feature branch
       icon: link
-    - url: https://app.harness.io/ng/#/account/EeRjnXTnS4GrLG5VNNJZUw/idp-admin/orgs/sandbox/projects/parson/pipelines/E2E_React_App_Provisioning/executions/sUStmG23ST2cj49o6mhimA/pipeline
+    - url: https://app.harness.io/ng/#/account/EeRjnXTnS4GrLG5VNNJZUw/idp-admin/orgs/sandbox/projects/parson/pipelines/E2E_React_App_Provisioning/executions/qH1iREy9SL6MbUkW23d_lg/pipeline
       title: Pipeline execution
       icon: build
 spec:
